@@ -28,6 +28,11 @@ interface DriverInterface {
   public function userCreate(\stdClass $user);
 
   /**
+   * Load a user.
+   */
+  public function userLoad($uid);
+
+  /**
    * Deletes a user.
    */
   public function userDelete(\stdClass $user);

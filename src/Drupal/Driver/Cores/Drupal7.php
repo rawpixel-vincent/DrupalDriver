@@ -104,6 +104,13 @@ class Drupal7 extends AbstractCore {
   /**
    * {@inheritdoc}
    */
+  public function userLoad($uid) {
+    user_load($uid);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function userDelete(\stdClass $user) {
     user_cancel(array(), $user->uid, 'user_cancel_delete');
   }

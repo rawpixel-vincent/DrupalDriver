@@ -73,6 +73,11 @@ interface CoreInterface {
   public function userCreate(\stdClass $user);
 
   /**
+   * Load a user.
+   */
+  public function userLoad($uid);
+
+  /**
    * Delete a user.
    */
   public function userDelete(\stdClass $user);

@@ -92,6 +92,13 @@ class DrupalDriver implements DriverInterface, SubDriverFinderInterface {
   /**
    * {@inheritdoc}
    */
+  public function userLoad($uid) {
+    $this->getCore()->userLoad($uid);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function userCreate(\stdClass $user) {
     $this->getCore()->userCreate($user);
   }
